@@ -1,1 +1,1 @@
-Database schema of Free Chat Platform.
+Database management of Free Chat Platform.
