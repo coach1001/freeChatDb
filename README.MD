@@ -1,0 +1,1 @@
+Database schema of Free Chat Platform.
