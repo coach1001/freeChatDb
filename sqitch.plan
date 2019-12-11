@@ -6,3 +6,4 @@ membership_schema 2019-12-11T19:18:58Z Francois Weber <coach1001@gmail.com> # Cr
 token_type 2019-12-11T19:24:21Z Francois Weber <coach1001@gmail.com> # Type of token eg. validation
 account_status_type 2019-12-11T19:38:18Z Francois Weber <coach1001@gmail.com> # Account status type eg. activated
 account_roles_type 2019-12-11T19:43:39Z Francois Weber <coach1001@gmail.com> # Account roles eg. anonymous
+email_status_type 2019-12-11T19:48:26Z Francois Weber <coach1001@gmail.com> # Email status type eg. processing
