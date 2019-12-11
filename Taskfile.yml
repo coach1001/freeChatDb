@@ -1,0 +1,20 @@
+version: '2'
+
+tasks:
+  dev-deploy:
+    cmds:
+      - sqitch deploy --target dev
+  dev-revert:
+    cmds:
+      - sqitch revert --target dev
+  dev-verify:
+    cmds:
+      - sqitch verify --target dev
+  dev-e2e:
+    cmds: 
+      - sqitch revert --target dev -y
+      - sqitch deploy --target dev
+      - sqitch revert --target dev -y
+  dev-status:
+    cmds:
+      - sqitch status --target dev
