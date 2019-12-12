@@ -2,6 +2,6 @@
 
 BEGIN;
 
-CREATE TYPE membership.token_type AS ENUM ('VALIDATION','RESET_PASSWORD');
+CREATE TYPE membership.token_type AS ENUM ('validation','reset_password');
 
 COMMIT;

@@ -2,6 +2,6 @@
 
 BEGIN;
 
-CREATE TYPE membership.account_status AS ENUM ('NOT_ACTIVATED','ACTIVATED','BANNED');
+CREATE TYPE membership.account_status AS ENUM ('not_activated','activated','banned');
 
 COMMIT;

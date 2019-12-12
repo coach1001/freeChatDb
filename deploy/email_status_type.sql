@@ -2,6 +2,6 @@
 
 BEGIN;
 
-CREATE TYPE membership.email_status AS  ENUM ('PROCESSING','AWAITING_RETRY','SENT','FAILED','AWAITING');
+CREATE TYPE membership.email_status AS  ENUM ('processing','awaiting_retry','sent','failed','awaiting');
 
 COMMIT;

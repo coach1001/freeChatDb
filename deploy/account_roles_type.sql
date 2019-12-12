@@ -2,6 +2,6 @@
 
 BEGIN;
 
-CREATE TYPE membership.account_roles AS ENUM ('ANONYMOUS','MEMBER');
+CREATE TYPE membership.account_roles AS ENUM ('anon','member');
 
 COMMIT;
