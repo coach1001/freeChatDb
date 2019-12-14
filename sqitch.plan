@@ -11,3 +11,4 @@ jwt_token_type 2019-12-11T19:51:59Z Francois Weber <coach1001@gmail.com> # Jwt t
 anonymous_role 2019-12-11T19:58:11Z Francois Weber <coach1001@gmail.com> # Create anonymous role
 authenticator_role 2019-12-14T18:44:57Z Francois Weber <coach1001@gmail.com> # Create authenticator role
 member_role 2019-12-14T18:49:08Z Francois Weber <coach1001@gmail.com> # Create member role
+pgcrypto_extension 2019-12-14T18:56:41Z Francois Weber <coach1001@gmail.com> # Create pgcrypto extension
