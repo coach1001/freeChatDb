@@ -9,3 +9,5 @@ account_roles_type 2019-12-11T19:43:39Z Francois Weber <coach1001@gmail.com> # A
 email_status_type 2019-12-11T19:48:26Z Francois Weber <coach1001@gmail.com> # Email status type eg. processing
 jwt_token_type 2019-12-11T19:51:59Z Francois Weber <coach1001@gmail.com> # Jwt token type
 anonymous_role 2019-12-11T19:58:11Z Francois Weber <coach1001@gmail.com> # Create anonymous role
+authenticator_role 2019-12-14T18:44:57Z Francois Weber <coach1001@gmail.com> # Create authenticator role
+member_role 2019-12-14T18:49:08Z Francois Weber <coach1001@gmail.com> # Create member role
