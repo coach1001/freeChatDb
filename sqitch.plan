@@ -12,3 +12,5 @@ anonymous_role 2019-12-11T19:58:11Z Francois Weber <coach1001@gmail.com> # Creat
 authenticator_role 2019-12-14T18:44:57Z Francois Weber <coach1001@gmail.com> # Create authenticator role
 member_role 2019-12-14T18:49:08Z Francois Weber <coach1001@gmail.com> # Create member role
 pgcrypto_extension 2019-12-14T18:56:41Z Francois Weber <coach1001@gmail.com> # Create pgcrypto extension
+url_encode_function 2019-12-14T19:33:59Z Francois Weber <coach1001@gmail.com> # Create url encode function
+url_decode_function 2019-12-14T19:34:18Z Francois Weber <coach1001@gmail.com> # Create url decode function
