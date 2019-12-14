@@ -14,3 +14,5 @@ member_role 2019-12-14T18:49:08Z Francois Weber <coach1001@gmail.com> # Create m
 pgcrypto_extension 2019-12-14T18:56:41Z Francois Weber <coach1001@gmail.com> # Create pgcrypto extension
 url_encode_function 2019-12-14T19:33:59Z Francois Weber <coach1001@gmail.com> # Create url encode function
 url_decode_function 2019-12-14T19:34:18Z Francois Weber <coach1001@gmail.com> # Create url decode function
+algorithm_sign_function 2019-12-14T20:19:35Z Francois Weber <coach1001@gmail.com> # Create aligorith sign function
+uuid_extension 2019-12-14T20:52:16Z Francois Weber <coach1001@gmail.com> # Create uuid extension

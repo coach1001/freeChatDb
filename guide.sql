@@ -953,8 +953,6 @@ CREATE TABLE authentication.accounts(
 
 	CONSTRAINT ck_valid_email_address CHECK (email_address ~* '^.+@.+\..+$' )
 
-
-
 );
 
 -- ddl-end --

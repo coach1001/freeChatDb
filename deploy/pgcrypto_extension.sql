@@ -2,6 +2,6 @@
 
 BEGIN;
 
-CREATE EXTENSION pgcrypto WITH SCHEMA membership;
+CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA membership;
 
 COMMIT;
