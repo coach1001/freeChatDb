@@ -20,6 +20,8 @@ SET check_function_bodies = false;
 
 -- DROP ROLE IF EXISTS web_anon;
 
+
+-- ############################ DONE
 CREATE ROLE web_anon WITH 
 
 	ENCRYPTED PASSWORD '********';
@@ -32,6 +34,7 @@ CREATE ROLE web_anon WITH
 
 -- DROP ROLE IF EXISTS authenticated_user;
 
+-- ############################ DONE
 CREATE ROLE authenticated_user WITH 
 
 	INHERIT
@@ -46,6 +49,7 @@ CREATE ROLE authenticated_user WITH
 
 -- DROP ROLE IF EXISTS authenticator;
 
+-- ############################ DONE
 CREATE ROLE authenticator WITH ;
 
 -- ddl-end --
@@ -80,7 +84,7 @@ CREATE ROLE authenticator WITH ;
 -- object: authentication | type: SCHEMA --
 
 -- DROP SCHEMA IF EXISTS authentication CASCADE;
-
+-- ############################ DONE
 CREATE SCHEMA authentication;
 
 -- ddl-end --
@@ -101,6 +105,7 @@ SET search_path TO pg_catalog,public,authentication;
 
 -- DROP TYPE IF EXISTS authentication.token_type CASCADE;
 
+-- ############################ DONE
 CREATE TYPE authentication.token_type AS
 
  ENUM ('validation','reset_password');
@@ -117,6 +122,7 @@ ALTER TYPE authentication.token_type OWNER TO postgres;
 
 -- DROP TYPE IF EXISTS authentication.account_status CASCADE;
 
+-- ############################ DONE
 CREATE TYPE authentication.account_status AS
 
  ENUM ('not_activated','activated','banned');
@@ -133,6 +139,7 @@ ALTER TYPE authentication.account_status OWNER TO postgres;
 
 -- DROP SEQUENCE IF EXISTS authentication.tokens_id_seq CASCADE;
 
+-- ############################ DONE
 CREATE SEQUENCE authentication.tokens_id_seq
 
 	INCREMENT BY 1
@@ -157,6 +164,7 @@ CREATE SEQUENCE authentication.tokens_id_seq
 
 -- DROP TYPE IF EXISTS authentication.account_roles CASCADE;
 
+-- ############################ DONE
 CREATE TYPE authentication.account_roles AS
 
  ENUM ('web_anon','authenticated_user');
@@ -173,6 +181,7 @@ ALTER TYPE authentication.account_roles OWNER TO postgres;
 
 -- DROP SEQUENCE IF EXISTS authentication.accounts_id_seq CASCADE;
 
+-- ############################ DONE
 CREATE SEQUENCE authentication.accounts_id_seq
 
 	INCREMENT BY 1
@@ -197,6 +206,7 @@ CREATE SEQUENCE authentication.accounts_id_seq
 
 -- DROP SEQUENCE IF EXISTS authentication.email_templates_id_seq CASCADE;
 
+-- ############################ DONE
 CREATE SEQUENCE authentication.email_templates_id_seq
 
 	INCREMENT BY 1
@@ -221,6 +231,7 @@ CREATE SEQUENCE authentication.email_templates_id_seq
 
 -- DROP TYPE IF EXISTS authentication.email_status CASCADE;
 
+-- ############################ DONE
 CREATE TYPE authentication.email_status AS
 
  ENUM ('processing','awaiting_retry','sent','failed','awaiting');
@@ -237,6 +248,7 @@ ALTER TYPE authentication.email_status OWNER TO postgres;
 
 -- DROP SEQUENCE IF EXISTS authentication.outgoing_emails_id_seq CASCADE;
 
+-- ############################ DONE
 CREATE SEQUENCE authentication.outgoing_emails_id_seq
 
 	INCREMENT BY 1
@@ -261,6 +273,7 @@ CREATE SEQUENCE authentication.outgoing_emails_id_seq
 
 -- DROP EXTENSION IF EXISTS pgcrypto CASCADE;
 
+-- ############################ DONE
 CREATE EXTENSION pgcrypto
 
       WITH SCHEMA authentication
@@ -279,6 +292,7 @@ COMMENT ON EXTENSION pgcrypto IS 'cryptographic functions';
 
 -- DROP FUNCTION IF EXISTS authentication.url_encode(bytea) CASCADE;
 
+-- ############################ DONE
 CREATE FUNCTION authentication.url_encode ( data bytea)
 
 	RETURNS text
@@ -311,6 +325,7 @@ ALTER FUNCTION authentication.url_encode(bytea) OWNER TO postgres;
 
 -- DROP FUNCTION IF EXISTS authentication.url_decode(text) CASCADE;
 
+-- ############################ DONE
 CREATE FUNCTION authentication.url_decode ( data text)
 
 	RETURNS bytea
@@ -361,6 +376,7 @@ ALTER FUNCTION authentication.url_decode(text) OWNER TO postgres;
 
 -- DROP FUNCTION IF EXISTS authentication.algorithm_sign(text,text,text) CASCADE;
 
+-- ############################ DONE
 CREATE FUNCTION authentication.algorithm_sign ( signables text,  secret text,  algorithm text)
 
 	RETURNS text
@@ -411,6 +427,7 @@ ALTER FUNCTION authentication.algorithm_sign(text,text,text) OWNER TO postgres;
 
 -- DROP FUNCTION IF EXISTS authentication.sign(json,text,text) CASCADE;
 
+-- ############################ DONE
 CREATE FUNCTION authentication.sign ( payload json,  secret text,  algorithm text DEFAULT 'HS256'::text)
 
 	RETURNS text

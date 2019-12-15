@@ -4,7 +4,6 @@ BEGIN;
 
 CREATE TABLE membership.tokens(
 
-
 	id uuid NOT NULL DEFAULT uuid_generate_v4(),
 	account uuid references membership.accounts(id) ON DELETE SET NULL NOT NULL,
 	token_type membership.token_type NOT NULL DEFAULT 'validation',
