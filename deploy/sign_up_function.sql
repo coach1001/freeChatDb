@@ -44,7 +44,7 @@ BEGIN
 		FROM membership.email_templates 
 		WHERE token_type='validation' AND active=true LIMIT 1;
 
-		INSERT INTO authentication.outgoing_emails(email_template, _from_,  _to_, doc_tokens, email_status)
+		INSERT INTO membership.emails(email_template, _from_,  _to_, doc_tokens, email_status)
 		VALUES ( 
 			_validate_email_template_id, 
 			current_setting('app.settings.app_admin_email'),

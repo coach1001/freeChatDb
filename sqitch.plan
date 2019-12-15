@@ -28,3 +28,6 @@ check_if_role_exists_trigger 2019-12-15T19:59:20Z Francois Weber <coach1001@gmai
 encrypt_password_trigger 2019-12-15T20:00:02Z Francois Weber <coach1001@gmail.com> # Create encrypt password trigger function
 user_role_function 2019-12-15T20:19:05Z Francois Weber <coach1001@gmail.com> # Create user role function
 sign_in_function 2019-12-15T20:19:23Z Francois Weber <coach1001@gmail.com> # Create sign in function
+validate_account_function 2019-12-15T20:58:04Z Francois Weber <coach1001@gmail.com> # Create validate account function
+request_reset_password_function 2019-12-15T20:58:17Z Francois Weber <coach1001@gmail.com> # Create request reset password function
+reset_password_function 2019-12-15T20:59:12Z Francois Weber <coach1001@gmail.com> # Create reset password function

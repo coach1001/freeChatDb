@@ -887,7 +887,7 @@ ALTER FUNCTION public.sign_in(IN character varying(255),IN character varying(255
 -- object: authentication.tokens | type: TABLE --
 
 -- DROP TABLE IF EXISTS authentication.tokens CASCADE;
-
+-- DONE
 CREATE TABLE authentication.tokens(
 
 	id bigint NOT NULL DEFAULT nextval('authentication.tokens_id_seq'::regclass),
@@ -919,7 +919,7 @@ ALTER TABLE authentication.tokens OWNER TO postgres;
 -- object: authentication.email_templates | type: TABLE --
 
 -- DROP TABLE IF EXISTS authentication.email_templates CASCADE;
-
+-- DONE
 CREATE TABLE authentication.email_templates(
 
 	id bigint NOT NULL DEFAULT nextval('authentication.email_templates_id_seq'::regclass),
@@ -947,7 +947,7 @@ ALTER TABLE authentication.email_templates OWNER TO postgres;
 -- object: authentication.accounts | type: TABLE --
 
 -- DROP TABLE IF EXISTS authentication.accounts CASCADE;
-
+-- DONE
 CREATE TABLE authentication.accounts(
 
 	id bigint NOT NULL DEFAULT nextval('authentication.accounts_id_seq'::regclass),
@@ -983,7 +983,7 @@ ALTER TABLE authentication.accounts OWNER TO postgres;
 -- object: authentication.outgoing_emails | type: TABLE --
 
 -- DROP TABLE IF EXISTS authentication.outgoing_emails CASCADE;
-
+-- DONE
 CREATE TABLE authentication.outgoing_emails(
 
 	id bigint NOT NULL DEFAULT nextval('authentication.outgoing_emails_id_seq'::regclass),
@@ -1053,7 +1053,7 @@ CREATE TRIGGER tg_encrypt_password
 -- object: public.validate_account | type: FUNCTION --
 
 -- DROP FUNCTION IF EXISTS public.validate_account(IN character varying,IN character varying) CASCADE;
-
+-- DONE
 CREATE FUNCTION public.validate_account (IN _email_address character varying, IN _token character varying)
 
 	RETURNS void
@@ -1151,7 +1151,7 @@ ALTER FUNCTION public.validate_account(IN character varying,IN character varying
 -- object: public.request_reset_password | type: FUNCTION --
 
 -- DROP FUNCTION IF EXISTS public.request_reset_password(IN character varying) CASCADE;
-
+-- DONE
 CREATE FUNCTION public.request_reset_password (IN _email_address character varying)
 
 	RETURNS void
@@ -1377,7 +1377,7 @@ ALTER FUNCTION public.reset_password(IN character varying,IN character varying,I
 -- object: fk_account_tokens | type: CONSTRAINT --
 
 -- ALTER TABLE authentication.tokens DROP CONSTRAINT IF EXISTS fk_account_tokens CASCADE;
-
+-- DONE
 ALTER TABLE authentication.tokens ADD CONSTRAINT fk_account_tokens FOREIGN KEY (account)
 
 REFERENCES authentication.accounts (id) MATCH FULL
@@ -1391,7 +1391,7 @@ ON DELETE NO ACTION ON UPDATE CASCADE;
 -- object: fk_template_outgoing_emails | type: CONSTRAINT --
 
 -- ALTER TABLE authentication.outgoing_emails DROP CONSTRAINT IF EXISTS fk_template_outgoing_emails CASCADE;
-
+-- DONE
 ALTER TABLE authentication.outgoing_emails ADD CONSTRAINT fk_template_outgoing_emails FOREIGN KEY (email_template)
 
 REFERENCES authentication.email_templates (id) MATCH FULL
