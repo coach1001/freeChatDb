@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP SCHEMA membership;
+DROP SCHEMA membership CASCADE;
 
 COMMIT;

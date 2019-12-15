@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP FUNCTION IF EXISTS membership.algorithm_sign(text, text, text);
+DROP FUNCTION IF EXISTS membership.algorithm_sign(text, text, text) CASCADE;
 
 COMMIT;

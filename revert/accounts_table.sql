@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TABLE membership.accounts;
+DROP TABLE membership.accounts CASCADE;
 
 COMMIT;

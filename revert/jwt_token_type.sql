@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TYPE IF EXISTS  membership.jwt_token;
+DROP TYPE IF EXISTS  membership.jwt_token CASCADE;
 
 COMMIT;

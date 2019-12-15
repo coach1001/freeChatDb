@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TYPE IF EXISTS  membership.email_status;
+DROP TYPE IF EXISTS  membership.email_status CASCADE;
 
 COMMIT;

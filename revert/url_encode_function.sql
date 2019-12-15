@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP FUNCTION IF EXISTS membership.url_encode(data bytea);
+DROP FUNCTION IF EXISTS membership.url_encode(data bytea) CASCADE;
 
 COMMIT;

@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TYPE IF EXISTS  membership.token_type;
+DROP TYPE IF EXISTS  membership.token_type CASCADE;
 
 COMMIT;

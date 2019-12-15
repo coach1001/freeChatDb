@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TYPE IF EXISTS  membership.account_roles;
+DROP TYPE IF EXISTS  membership.account_roles CASCADE;
 
 COMMIT;

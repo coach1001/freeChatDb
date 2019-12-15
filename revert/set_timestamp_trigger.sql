@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP FUNCTION IF EXISTS tg_set_timestamp();
+DROP FUNCTION IF EXISTS tg_set_timestamp() CASCADE;
 
 COMMIT;

@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP FUNCTION IF EXISTS membership.url_decode(data text);
+DROP FUNCTION IF EXISTS membership.url_decode(data text) CASCADE;
 
 COMMIT;

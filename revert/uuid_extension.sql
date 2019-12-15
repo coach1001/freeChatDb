@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP EXTENSION "uuid-ossp";
+DROP EXTENSION "uuid-ossp" CASCADE;
 
 COMMIT;

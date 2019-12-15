@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TABLE membership.emails;
+DROP TABLE membership.emails CASCADE;
 
 COMMIT;
