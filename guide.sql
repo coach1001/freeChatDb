@@ -535,6 +535,7 @@ ALTER FUNCTION authentication.verify(IN text,IN text,IN text) OWNER TO postgres;
 
 -- DROP FUNCTION IF EXISTS public.sign_up(IN character varying(255),IN character varying(255),IN character varying(255),IN character varying(255),IN character varying(255)) CASCADE;
 
+-- ############################ DONE
 CREATE FUNCTION public.sign_up (IN _email_address character varying(255), IN _password character varying(255), IN _confirm_password character varying(255), IN _first_name character varying(255), IN _last_name character varying(255))
 
 	RETURNS void
