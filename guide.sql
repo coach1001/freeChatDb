@@ -488,6 +488,7 @@ ALTER FUNCTION authentication.sign(json,text,text) OWNER TO postgres;
 
 -- DROP FUNCTION IF EXISTS authentication.verify(IN text,IN text,IN text) CASCADE;
 
+-- ############################ DONE
 CREATE FUNCTION authentication.verify (IN token text, IN secret text, IN algorithm text DEFAULT 'HS256'::text)
 
 	RETURNS TABLE ( header json,  payload json,  valid boolean)
