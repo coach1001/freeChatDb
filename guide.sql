@@ -1267,7 +1267,7 @@ ALTER FUNCTION public.request_reset_password(IN character varying) OWNER TO post
 -- object: public.reset_password | type: FUNCTION --
 
 -- DROP FUNCTION IF EXISTS public.reset_password(IN character varying,IN character varying,IN character varying,IN character varying) CASCADE;
-
+-- DONE
 CREATE FUNCTION public.reset_password (IN _email_address character varying, IN _password character varying, IN _confirm_password character varying, IN _token character varying)
 
 	RETURNS void
@@ -1410,11 +1410,7 @@ GRANT web_anon TO authenticator;
 
 GRANT USAGE ON SCHEMA public, authentication TO web_anon;
 
-
-
 GRANT SELECT ON TABLE pg_authid TO web_anon;
-
-
 
 GRANT SELECT, INSERT, UPDATE ON TABLE authentication.accounts TO web_anon;
 
@@ -1423,7 +1419,6 @@ GRANT SELECT, INSERT, UPDATE ON TABLE authentication.tokens TO web_anon;
 GRANT SELECT, INSERT ON TABLE authentication.outgoing_emails TO web_anon;
 
 GRANT SELECT ON TABLE authentication.email_templates TO web_anon;
-
 
 
 GRANT USAGE, SELECT ON SEQUENCE authentication.accounts_id_seq TO web_anon;
@@ -1435,63 +1430,34 @@ GRANT USAGE, SELECT ON SEQUENCE authentication.outgoing_emails_id_seq TO web_ano
 
 
 GRANT EXECUTE ON FUNCTION 
-
 	sign_in(
-
 		character varying,
-
 		character varying
-
 	) to web_anon;
-
-
 
 GRANT EXECUTE ON FUNCTION 
-
 	sign_up(
-
 		character varying,
-
 		character varying,
-
 		character varying,
-
 		character varying,
-
 		character varying
-
 	) to web_anon;
 
 
-
-INSERT INTO authentication.email_templates(
-
-	token_type, subject, body)
-
+INSERT INTO authentication.email_templates(token_type, subject, body)
 VALUES (
-
 	'validation', 
-
 	'{{appName}}, {{emailAddress}} - Account Validation', 
-
 	'{{firstName}} {{lastName}}, Your One Time Pin  is  {{token}}
-
-This token will expire at {{tokenExpiry}}');
-
+	This token will expire at {{tokenExpiry}}');
 
 
-INSERT INTO authentication.email_templates(
-
-	token_type, subject, body)
-
+INSERT INTO authentication.email_templates(token_type, subject, body)
 VALUES (
-
 	'reset_password', 
-
 	'{{appName}}, {{emailAddress}} - Account Password Reset', 
-
 	'{{firstName}} {{lastName}}, Your One Time Pin  is  {{token}}
-
-This token will expire at {{tokenExpiry}}');
+	This token will expire at {{tokenExpiry}}');
 
 ---

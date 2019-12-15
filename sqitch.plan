@@ -31,3 +31,5 @@ sign_in_function 2019-12-15T20:19:23Z Francois Weber <coach1001@gmail.com> # Cre
 validate_account_function 2019-12-15T20:58:04Z Francois Weber <coach1001@gmail.com> # Create validate account function
 request_reset_password_function 2019-12-15T20:58:17Z Francois Weber <coach1001@gmail.com> # Create request reset password function
 reset_password_function 2019-12-15T20:59:12Z Francois Weber <coach1001@gmail.com> # Create reset password function
+anon_permissions 2019-12-15T21:27:14Z Francois Weber <coach1001@gmail.com> # Create anon role permissions
+default_email_templates 2019-12-15T21:27:59Z Francois Weber <coach1001@gmail.com> # Create default email templates
