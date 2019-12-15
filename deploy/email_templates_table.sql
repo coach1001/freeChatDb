@@ -13,6 +13,7 @@ CREATE TABLE membership.email_templates(
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
 
 	CONSTRAINT pk_membership_email_templates PRIMARY KEY (id)
+
 );
 
 CREATE TRIGGER tg_membership_email_templates_set_timestamp
