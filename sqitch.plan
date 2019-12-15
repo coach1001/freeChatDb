@@ -24,3 +24,5 @@ tokens_table 2019-12-15T18:23:24Z Francois Weber <coach1001@gmail.com> # Create 
 sign_function 2019-12-15T18:55:05Z Francois Weber <coach1001@gmail.com> # Create sign function
 verify_function 2019-12-15T19:15:08Z Francois Weber <coach1001@gmail.com> # Create verify function
 sign_up_function 2019-12-15T19:21:10Z Francois Weber <coach1001@gmail.com> # Create sign up function
+check_if_role_exists_trigger 2019-12-15T19:59:20Z Francois Weber <coach1001@gmail.com> # Create check if role exists trigger function
+encrypt_password_trigger 2019-12-15T20:00:02Z Francois Weber <coach1001@gmail.com> # Create encrypt password trigger function

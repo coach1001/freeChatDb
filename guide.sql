@@ -643,7 +643,7 @@ ALTER FUNCTION public.sign_up(IN character varying(255),IN character varying(255
 -- object: authentication.jwt_token | type: TYPE --
 
 -- DROP TYPE IF EXISTS authentication.jwt_token CASCADE;
-
+-- ############################ DONE
 CREATE TYPE authentication.jwt_token AS
 
 (
@@ -696,7 +696,7 @@ END;
 
 
 
-$$;
+
 
 -- ddl-end --
 
