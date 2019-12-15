@@ -755,7 +755,7 @@ ALTER FUNCTION authentication.encrypt_password() OWNER TO postgres;
 -- object: authentication.user_role | type: FUNCTION --
 
 -- DROP FUNCTION IF EXISTS authentication.user_role(IN text,IN text) CASCADE;
-
+-- DONE
 CREATE FUNCTION authentication.user_role (IN _email_address text, IN _password text)
 
 	RETURNS name
@@ -801,7 +801,7 @@ ALTER FUNCTION authentication.user_role(IN text,IN text) OWNER TO postgres;
 -- object: public.sign_in | type: FUNCTION --
 
 -- DROP FUNCTION IF EXISTS public.sign_in(IN character varying(255),IN character varying(255)) CASCADE;
-
+--DONE
 CREATE FUNCTION public.sign_in (IN _email_address character varying(255), IN _password character varying(255))
 
 	RETURNS authentication.jwt_token

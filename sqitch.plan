@@ -26,3 +26,5 @@ verify_function 2019-12-15T19:15:08Z Francois Weber <coach1001@gmail.com> # Crea
 sign_up_function 2019-12-15T19:21:10Z Francois Weber <coach1001@gmail.com> # Create sign up function
 check_if_role_exists_trigger 2019-12-15T19:59:20Z Francois Weber <coach1001@gmail.com> # Create check if role exists trigger function
 encrypt_password_trigger 2019-12-15T20:00:02Z Francois Weber <coach1001@gmail.com> # Create encrypt password trigger function
+user_role_function 2019-12-15T20:19:05Z Francois Weber <coach1001@gmail.com> # Create user role function
+sign_in_function 2019-12-15T20:19:23Z Francois Weber <coach1001@gmail.com> # Create sign in function
