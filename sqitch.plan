@@ -17,3 +17,4 @@ url_decode_function 2019-12-14T19:34:18Z Francois Weber <coach1001@gmail.com> # 
 algorithm_sign_function 2019-12-14T20:19:35Z Francois Weber <coach1001@gmail.com> # Create aligorith sign function
 uuid_extension 2019-12-14T20:52:16Z Francois Weber <coach1001@gmail.com> # Create uuid extension
 set_timestamp_trigger 2019-12-14T21:03:47Z Francois Weber <coach1001@gmail.com> # Create timestamp trigger
+accounts_table 2019-12-14T21:06:22Z Francois Weber <coach1001@gmail.com> # Create accounts table
