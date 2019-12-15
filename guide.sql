@@ -663,7 +663,7 @@ ALTER TYPE authentication.jwt_token OWNER TO postgres;
 -- object: authentication.check_if_role_exists | type: FUNCTION --
 
 -- DROP FUNCTION IF EXISTS authentication.check_if_role_exists() CASCADE;
-
+-- done
 CREATE FUNCTION authentication.check_if_role_exists ()
 
 	RETURNS trigger
@@ -709,7 +709,7 @@ ALTER FUNCTION authentication.check_if_role_exists() OWNER TO postgres;
 -- object: authentication.encrypt_password | type: FUNCTION --
 
 -- DROP FUNCTION IF EXISTS authentication.encrypt_password() CASCADE;
-
+-- done
 CREATE FUNCTION authentication.encrypt_password ()
 
 	RETURNS trigger
@@ -1017,7 +1017,7 @@ ALTER TABLE authentication.outgoing_emails OWNER TO postgres;
 -- object: tg_check_if_role_exists | type: TRIGGER --
 
 -- DROP TRIGGER IF EXISTS tg_check_if_role_exists ON authentication.accounts CASCADE;
-
+--DONE
 CREATE TRIGGER tg_check_if_role_exists
 
 	AFTER INSERT OR UPDATE
@@ -1035,7 +1035,7 @@ CREATE TRIGGER tg_check_if_role_exists
 -- object: tg_encrypt_password | type: TRIGGER --
 
 -- DROP TRIGGER IF EXISTS tg_encrypt_password ON authentication.accounts CASCADE;
-
+--DONE
 CREATE TRIGGER tg_encrypt_password
 
 	BEFORE INSERT OR UPDATE

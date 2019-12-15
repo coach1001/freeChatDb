@@ -18,4 +18,10 @@ BEGIN
 END;
 $$;
 
+CREATE TRIGGER tg_membership_accounts_encrypt_password
+BEFORE INSERT OR UPDATE
+ON membership.accounts
+FOR EACH ROW
+EXECUTE PROCEDURE membership.tg_encrypt_password();
+
 COMMIT;

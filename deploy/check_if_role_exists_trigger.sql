@@ -19,4 +19,10 @@ BEGIN
 END;
 $$;
 
+CREATE TRIGGER tg_membership_accounts_check_if_role_exists
+AFTER INSERT OR UPDATE
+ON membership.accounts
+FOR EACH ROW
+EXECUTE PROCEDURE membership.tg_check_if_role_exists();
+
 COMMIT;
