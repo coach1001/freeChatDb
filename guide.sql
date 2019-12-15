@@ -915,8 +915,6 @@ CREATE TABLE authentication.email_templates(
 
 	CONSTRAINT uq_email_templates_token_types UNIQUE (token_type)
 
-
-
 );
 
 -- ddl-end --
