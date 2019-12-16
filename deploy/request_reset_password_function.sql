@@ -17,7 +17,17 @@ DECLARE
 	_first_name character varying;
 	_last_name character varying;
 	_account_status membership.account_status;
+	_otp_size text;
+	_otp_fm text;
 BEGIN
+	_otp_size := '';
+	_otp_fm := 'fm';
+
+	FOR i IN 1..current_setting('app.settings.otp_size')::integer LOOP
+		_otp_size := _otp_size || '9';
+		_otp_fm := _otp_fm || '0';
+  	END LOOP;
+
 	SELECT id, first_name, last_name, status 
 	INTO _account_id, _first_name, _last_name, _account_status
 	FROM membership.accounts 
@@ -32,7 +42,7 @@ BEGIN
         _account_id,
         'reset_password',
         current_timestamp + (current_setting('app.settings.otp_lifetime_minutes')::integer * interval '1 minute'),
-        to_char(floor(random() * 9999 + 1)::int, 'fm0000'))
+        to_char(floor(random() * (_otp_size)::integer + 1)::integer, _otp_fm))
 	RETURNING * INTO _token_data;
 
 	SELECT id INTO _validate_email_template_id 
