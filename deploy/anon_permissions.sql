@@ -13,7 +13,7 @@ GRANT EXECUTE ON FUNCTION
 	public.sign_in(
 		character varying,
 		character varying
-	) to anon;
+	) TO anon;
 
 GRANT EXECUTE ON FUNCTION 
 	public.sign_up(
@@ -22,6 +22,25 @@ GRANT EXECUTE ON FUNCTION
 		character varying,
 		character varying,
 		character varying
-	) to anon;
+	) TO anon;
+
+GRANT EXECUTE ON FUNCTION 
+	public.request_reset_password(
+		character varying
+	) TO anon;
+
+GRANT EXECUTE ON FUNCTION 
+	public.reset_password(
+		character varying,
+		character varying,
+		character varying,
+		character varying
+	) TO anon;
+
+GRANT EXECUTE ON FUNCTION 
+	public.validate_account(
+		character varying,
+		character varying
+	) TO anon;
 
 COMMIT;

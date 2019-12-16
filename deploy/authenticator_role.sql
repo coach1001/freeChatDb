@@ -8,7 +8,7 @@ BEGIN
       SELECT
       FROM   pg_catalog.pg_roles
       WHERE  rolname = 'authenticator') THEN
-      CREATE ROLE authenticator NOINHERIT;
+      CREATE ROLE authenticator WITH LOGIN PASSWORD 'P0wfYsojI1niIxra' NOINHERIT;
       GRANT anon TO authenticator;
    END IF;
 END $$;

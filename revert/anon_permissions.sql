@@ -24,4 +24,23 @@ REVOKE EXECUTE ON FUNCTION
 		character varying
 	) FROM anon;
 
+REVOKE EXECUTE ON FUNCTION 
+	public.request_reset_password(
+		character varying
+	) FROM anon;
+
+REVOKE EXECUTE ON FUNCTION 
+	public.reset_password(
+		character varying,
+		character varying,
+		character varying,
+		character varying
+	) FROM anon;
+
+REVOKE EXECUTE ON FUNCTION 
+	public.validate_account(
+		character varying,
+		character varying
+	) FROM anon;
+
 COMMIT;
