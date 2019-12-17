@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP FUNCTION IF EXISTS public.sign_in(character varying(255), character varying(255)) CASCADE;
+DROP FUNCTION IF EXISTS api.sign_in(character varying(255), character varying(255)) CASCADE;
 
 COMMIT;

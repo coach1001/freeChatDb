@@ -2,7 +2,7 @@
 
 BEGIN;
 
-CREATE FUNCTION public.validate_account(_email_address character varying, _token character varying)
+CREATE FUNCTION api.validate_account(_email_address character varying, _token character varying)
 	RETURNS void
 	LANGUAGE plpgsql
 	VOLATILE 

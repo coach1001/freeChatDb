@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP FUNCTION IF EXISTS public.request_reset_password (character varying) CASCADE;
+DROP FUNCTION IF EXISTS api.request_reset_password (character varying) CASCADE;
 
 COMMIT;

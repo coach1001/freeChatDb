@@ -2,7 +2,7 @@
 
 BEGIN;
 
-DROP FUNCTION IF EXISTS public.reset_password (
+DROP FUNCTION IF EXISTS api.reset_password (
     character varying,
     character varying,
     character varying,

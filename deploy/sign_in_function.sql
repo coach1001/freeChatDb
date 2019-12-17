@@ -2,7 +2,7 @@
 
 BEGIN;
 
-CREATE FUNCTION public.sign_in (_email_address character varying(255), _password character varying(255))
+CREATE FUNCTION api.sign_in (_email_address character varying(255), _password character varying(255))
 	RETURNS membership.jwt_token
 	LANGUAGE plpgsql
 	VOLATILE 

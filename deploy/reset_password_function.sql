@@ -2,7 +2,7 @@
 
 BEGIN;
 
-CREATE FUNCTION public.reset_password (
+CREATE FUNCTION api.reset_password (
     _email_address character varying,
     _password character varying,
     _confirm_password character varying,

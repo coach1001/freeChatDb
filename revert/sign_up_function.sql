@@ -2,7 +2,7 @@
 
 BEGIN;
 
-DROP FUNCTION IF EXISTS public.sign_up(
+DROP FUNCTION IF EXISTS api.sign_up(
     character varying(255),
 	character varying(255),
 	character varying(255),

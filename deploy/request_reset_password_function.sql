@@ -2,7 +2,7 @@
 
 BEGIN;
 
-CREATE FUNCTION public.request_reset_password (_email_address character varying)
+CREATE FUNCTION api.request_reset_password (_email_address character varying)
 	RETURNS void
 	LANGUAGE plpgsql
 	VOLATILE 

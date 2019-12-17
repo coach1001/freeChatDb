@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP FUNCTION IF EXISTS public.validate_account(character varying, character varying) CASCADE;
+DROP FUNCTION IF EXISTS api.validate_account(character varying, character varying) CASCADE;
 
 COMMIT;

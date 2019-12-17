@@ -2,7 +2,7 @@
 
 BEGIN;
 
-CREATE FUNCTION public.sign_up (
+CREATE FUNCTION api.sign_up (
 	_email_address character varying(255),
 	_password character varying(255),
 	_confirm_password character varying(255),

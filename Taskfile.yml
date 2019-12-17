@@ -20,4 +20,7 @@ tasks:
       - sqitch status --target dev
   dev-postgrest:
     cmds:
-      - postgrest postgrest.conf
+      - postgrest postgrest_dev.conf
+  tst-postgrest:
+    cmds:
+      - postgrest postgrest_tst.conf
